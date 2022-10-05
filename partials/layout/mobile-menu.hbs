@@ -32,21 +32,6 @@
 
             <hr>
 
-            {{!-- Member Login --}}
-            {{#if @custom.disable_member_subscriptions}}
-            <nav class="flex px-4 justify-around">
-                {{#if @member}}
-                    <a href="/account/" data-portal="account" class="button is-black is-outlined">{{t "Account"}}</a>
-                    <a href="#signout" class="button is-black is-outlined" data-members-signout>{{t "Log out"}}</a>
-                {{else}}
-                    <a href="/signin/" data-portal="signin" class="button is-black is-outlined drop-border">{{t "Log in"}}</a>
-                    <a href="/signup/" data-portal="signup" class="button is-black is-outlined">{{t "Sign up"}}</a>
-                {{/if}}
-            </nav>
-
-            <hr>
-            {{/if}}
-
             {{!-- Social Media - ./partials/components/social-media.hbs --}}
             <div>
                 <span class="block px-4 text-sm">{{t "Follow"}}</span>
