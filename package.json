@@ -1,7 +1,7 @@
 {
-  "name": "mapache",
-  "description": "mapache theme for ghost by @GodoFredoNinja",
-  "demo": "https://godofredo.ninja",
+  "name": "mapache-veiledproductions",
+  "description": "mapache theme for ghost, originally by @GodoFredoNinja",
+  "demo": "https://new.veiledproductions.co.uk",
   "version": "4.0.1",
   "engines": {
     "ghost": ">=5.0.0"
@@ -12,9 +12,9 @@
     "mobile": "assets/images/screenshot-mobile.jpg"
   },
   "author": {
-    "name": "GodoFredoNinja",
-    "email": "hello@godofredo.ninja",
-    "url": "https://godofredo.ninja"
+    "name": "Cyclic Development",
+    "email": "pete@cyclick-development.co.uk",
+    "url": "https://www.cyclick-development.co.uk"
   },
   "gpm": {
     "type": "theme",
@@ -32,11 +32,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/godofredoninja/mapache"
+    "url": "https://github.com/cyclicdevelopment/mapache-veiledproductions"
   },
   "bugs": {
-    "url": "https://github.com/godofredoninja/mapache/issues",
-    "email": "hello@godofredo.ninja"
+    "url": "https://github.com/cyclickdevelopment/mapache-veiledproductions/issues",
+    "email": "pete@cyclick-development.co.uk"
   },
   "config": {
     "posts_per_page": 15,
