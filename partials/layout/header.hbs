@@ -78,38 +78,6 @@
                 </div>
             </li> --}}
 
-            {{!-- Member Login --}}
-            {{#if @custom.disable_member_subscriptions}}
-            <li class="header-dropdown-menu dropdown is-right is-hoverable h-16 hidden lg:flex items-center cursor-pointer">
-                <span class="hla"><svg class="icon is-large"><use xlink:href="#icon-user"></use></svg></span>
-
-                <div class="dropdown-menu is-right whitespace-normal">
-                    <div class="dropdown-content p-5 text-white">
-                        {{#if @member}}
-                            <a href="/account/" data-portal="account" class="flex items-center justify-between py-2 hover:opacity-80">
-                                <span>{{t "Account"}}</span>
-                                <svg class="icon is-stroke is-small"><use xlink:href="#icon-next"></use></svg>
-                            </a>
-                            <a href="#signout" class="flex items-center justify-between py-2 hover:opacity-80" data-members-signout>
-                                <span>{{t "Log out"}}</span>
-                                <svg class="icon is-stroke is-small"><use xlink:href="#icon-next"></use></svg>
-                            </a>
-                        {{else}}
-                            <a href="/signin/" data-portal="signin" class="flex items-center justify-between py-2 hover:opacity-80">
-                                <span>{{t "Log in"}}</span>
-                                <svg class="icon is-stroke is-small"><use xlink:href="#icon-next"></use></svg>
-                            </a>
-                            <a href="/signup/" data-portal="signup" class="flex items-center justify-between py-2 hover:opacity-80">
-                                <span>{{t "Sign up"}}</span>
-                                <svg class="icon is-stroke is-small"><use xlink:href="#icon-next"></use></svg>
-                            </a>
-                        {{/if}}
-
-                    </div>
-                </div>
-            </li>
-            {{/if}}
-
             {{!-- Toggle Search --}}
             <li class="js-toggle-search hla h-16 cursor-pointer flex items-center px-2"><svg class="icon is-large"><use xlink:href="#icon-search"></use></svg></li>
             {{!-- Toggle Menu Mobile --}}
