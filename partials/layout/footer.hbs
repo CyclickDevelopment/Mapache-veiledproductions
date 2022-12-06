@@ -3,24 +3,37 @@
         {{!-- Social Media - ./partials/components/social-media.hbs --}}
         {{> "components/social-media" class="footer-social-media"}}
 
-        {{!-- Secondary Navigation --}}
-        {{#if @site.secondary_navigation}}{{navigation type="secondary"}}{{/if}}
 
         <div class="footer-links">
             <div class="footerlinks-col1">
-                <h3>Latest</h3>
-                {{#foreach posts visibility="all" from="1" to="1"}}
-                    {{!-- Like Home Top Section -> Most recent article - partials/story/story-cover.hbs --}}
-                    {{> "story/story-cover" }}
-                {{/foreach}}
+                <h3>Films by Venue</h3>
+                <ul>
+                    <li><a href="#">Great Barn</a></li>
+                    <li><a href="#">The Granary</a></li>
+                    <li><a href="#">That Other Place</a></li>
+                </ul>
             </div>
             <div class="footerlinks-col2">
-
+                <h3>Films by County</h3>
+                <ul>
+                    <li><a href="#">Bedfordshire</a></li>
+                    <li><a href="#">Oxfordshire</a></li>
+                    <li><a href="#">Cambridgeshire</a></li>
+                </ul>
             </div>
             <div class="footerlinks-col3">
-
+                <h3>Films by Theme</h3>
+                <ul>
+                    <li><a href="#">Winter Weddings</a></li>
+                    <li><a href="#">Autumn Weddings</a></li>
+                    <li><a href="#">Unique Weddings</a></li>
+                </ul>
             </div>
         </div>
+        
+        {{!-- Secondary Navigation --}}
+        {{#if @site.secondary_navigation}}{{navigation type="secondary"}}{{/if}}
+
 
         {{!-- Copyright  --}}
         <div class="text-sm mt-5 opacity-80">
