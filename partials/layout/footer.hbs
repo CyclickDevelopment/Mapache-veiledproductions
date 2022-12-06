@@ -7,9 +7,19 @@
         {{#if @site.secondary_navigation}}{{navigation type="secondary"}}{{/if}}
 
         <div class="footer-links">
-            <div class="footerlinks-col1">1</div>
-            <div class="footerlinks-col2">2</div>
-            <div class="footerlinks-col3">3</div>
+            <div class="footerlinks-col1">
+                <h3>Latest</h3>
+                {{#foreach posts visibility="all" from="1" to="1"}}
+                    {{!-- Like Home Top Section -> Most recent article - partials/story/story-cover.hbs --}}
+                    {{> "story/story-cover" }}
+                {{/foreach}}
+            </div>
+            <div class="footerlinks-col2">
+
+            </div>
+            <div class="footerlinks-col3">
+
+            </div>
         </div>
 
         {{!-- Copyright  --}}
