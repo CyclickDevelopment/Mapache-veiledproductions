@@ -1,0 +1,30 @@
+{{!-- Layout --}}
+{{!< default }}
+
+{{#contentFor "mapache_class_body"}}is-article is-page is-single-post{{/contentFor}}
+
+{{#post}}
+
+<section class="p-outer">
+    <div class="p-inner p-hero">
+        <div class="p-hero-right">
+          {{! Loads the your cover image as defined in Ghost admin }}
+			<video src="https://new.veiledproductions.co.uk/content/media/2022/12/leah_and_nic_wedding_highlights_film_at_emmanuel_college_cambridge--1080p-.mp4" autoplay loop muted poster="https://img.spacergif.org/v1/1920x1080/0a/spacer.png" playsinline="" preload="metadata" style="background: transparent url('https://new.veiledproductions.co.uk/content/images/2022/12/LeahAndNicWeddingEmmanuelCollegeByDamienVickersPhotography-18-2.jpg') 50% 50% / cover no-repeat; height: 85vh; object-fit: cover;" width="1920" height="1080" ></video>
+	  		 <h1 class="post-title text-4xl md:text-44 mb-5 text-title text-center mx-auto max-w-3xl" style="position: relative;bottom: 10rem;">{{title}}</h1>
+        </div>
+    </div>
+</section>
+
+<article class="post container mx-auto my-8 lg:max-w-1000">
+
+    {{!-- Featured Image - partials/article/article-media.hbs --}}
+    {{> "article/article-media"}}
+
+    <div class="post-body-wrap relative lg:flex mx-auto max-w-3xl">
+        <div class="post-body min-w-0 js-post-content{{#match @custom.post_font "=" "font-serif"}} font-serif{{else}} font-sans{{/match}}{{#match @custom.post_font_size "=" "20px"}} text-xl{{else}} text-lg{{/match}}">
+            {{content}}
+        </div>
+    </div>
+</article>
+
+{{/post}}
