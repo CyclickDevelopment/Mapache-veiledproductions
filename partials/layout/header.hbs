@@ -28,6 +28,7 @@
                         {{> "components/social-media" class="header-social-media mb-5"}}
 
                         {{!-- Members --}}
+                        {{!-- TODO: This is temporarily disabled
                         {{#if @custom.disable_member_subscriptions}}
                         {{#unless @member}}
                         <div class="mb-2">
@@ -57,6 +58,7 @@
                         </div>
                         {{/unless}}
                         {{/if}}
+                        --}}
                     </div>
                 </div>
             </li>
@@ -79,7 +81,7 @@
             </li> --}}
 
             {{!-- Toggle Search --}}
-            <li class="js-toggle-search hla h-16 cursor-pointer flex items-center px-2"><svg class="icon is-large"><use xlink:href="#icon-search"></use></svg></li>
+            {{!--<li class="js-toggle-search hla h-16 cursor-pointer flex items-center px-2"><svg class="icon is-large"><use xlink:href="#icon-search"></use></svg></li>--}}
             {{!-- Toggle Menu Mobile --}}
             <li class="js-menu-open hla h-16 cursor-pointer flex items-center lg:hidden">
                 <svg class="icon is-large"><use xlink:href="#icon-menu"></use></svg>
