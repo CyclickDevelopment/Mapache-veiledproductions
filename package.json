@@ -2,7 +2,7 @@
   "name": "mapache-veiledproductions",
   "description": "mapache theme for ghost, originally by @GodoFredoNinja",
   "demo": "https://new.veiledproductions.co.uk",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "engines": {
     "ghost": ">=5.0.0"
   },
@@ -110,14 +110,6 @@
       },
       "logo_width": {
         "type": "text"
-      },
-      "disable_member_subscriptions": {
-        "type": "boolean",
-        "default": true
-      },
-      "sidebar_newsletter_background": {
-        "type": "color",
-        "default": "#485375"
       },
       "post_font": {
         "type": "select",
