@@ -95,7 +95,7 @@ function styles (done) {
 
 // Scripts
 function scripts (done) {
-  const files = ['main', 'post', 'search', 'prismjs', 'pagination']
+  const files = ['main', 'post', /*'search',*/ 'prismjs', 'pagination']
 
   merge(files.map(function (file) {
     return pump([
