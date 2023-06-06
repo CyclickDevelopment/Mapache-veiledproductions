@@ -101,7 +101,7 @@ function scripts (done) {
     return pump([
       browserify({
         basedir: '.',
-        debug: true,
+        debug: !isProduction,
         entries: `src/js/${file}.js`,
         cache: {},
         packageCache: {}
