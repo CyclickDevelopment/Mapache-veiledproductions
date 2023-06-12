@@ -22,10 +22,7 @@
 
 <script>  
     // Fire an event for the 404 page
-	ga('create', 'G-671V0RL6XZ');
-    ga('send', {
-      hitType: 'event',
-      eventCategory: '404 Response',
+    gtag('event', '404_response', {
       eventAction: window.location.href,
       eventLabel: document.referrer
  	 });
