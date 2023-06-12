@@ -39,13 +39,13 @@
 </div>
 
 {{!-- Switch to the 'post' context to grab editable content --}}
-{{#post}}
+{{#page}}
 <div class="post-body-wrap relative lg:flex mx-auto max-w-3xl">
     <div class="post-body min-w-0 js-post-content{{#match @custom.post_font "=" "font-serif"}} font-serif{{else}} font-sans{{/match}}{{#match @custom.post_font_size "=" "20px"}} text-xl{{else}} text-lg{{/match}}">
         {{content}}
     </div>
 </div>
-{{/post}}
+{{/page}}
 
 {{!-- Post List - 4 latest articles --}}
 <div class="container mx-auto my-10">
