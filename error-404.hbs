@@ -1,7 +1,6 @@
 {{!-- Layout --}}
 {{!< default }}
 
-
 <section class="page-error-wrap container mx-auto px-4 max-w-4xl text-center py-vw4">
     <h1 class="page-error-title text-title text-7xl lg:text-9xl">404</h1>
     <h2 class="mt-4 text-2xl text-title lg:text-4xl">{{t "Oops... Page Not Found!"}}</h2>
@@ -20,5 +19,17 @@
         </div>
     </div>
 </section>
+
+<script>  
+    // Fire an event for the 404 page
+	ga('create', 'G-671V0RL6XZ');
+    ga('send', {
+      hitType: 'event',
+      eventCategory: '404 Response',
+      eventAction: window.location.href,
+      eventLabel: document.referrer
+ 	 });
+</script>
+
 
 {{/get}}
