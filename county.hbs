@@ -10,7 +10,7 @@
 
 {{!-- Home Top Section --}}
 <div class="h-cover home-banner mx-auto mb-10 p-2 grid gap-2 lg:grid-cols-5">
-    {{#foreach posts visibility="all" from="1" to="4"}}
+    {{#foreach posts visibility="all" from="1" to="3"}}
         {{!-- Home Top Section -> 3 first Articles - partials/story/story-cover.hbs --}}
         {{> "story/story-cover" }}
     {{/foreach}}
@@ -25,7 +25,7 @@
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 
         {{!-- Story Grid - partiasl/story/story-grid.hbs --}}
-        {{#foreach posts visibility="all" from="5" to="9"}}
+        {{#foreach posts visibility="all" from="4" to="8"}}
             {{> "story/story-grid" classTitle='text-xl'}}
         {{/foreach}}
 
