@@ -34,12 +34,14 @@
 </div>
 
 {{#page}}
-{{!-- Switch to the 'post' context to grab editable content --}}
-<div class="post-body-wrap relative lg:flex mx-auto max-w-3xl">
-    <div class="post-body min-w-0 js-post-content{{#match @custom.post_font "=" "font-serif"}} font-serif{{else}} font-sans{{/match}}{{#match @custom.post_font_size "=" "20px"}} text-xl{{else}} text-lg{{/match}}">
-        {{content}}
+<article class="post container mx-auto my-8 lg:max-w-1000">
+    {{!-- Switch to the 'post' context to grab editable content --}}
+    <div class="post-body-wrap relative lg:flex mx-auto max-w-3xl">
+        <div class="post-body min-w-0 js-post-content{{#match @custom.post_font "=" "font-serif"}} font-serif{{else}} font-sans{{/match}}{{#match @custom.post_font_size "=" "20px"}} text-xl{{else}} text-lg{{/match}}">
+            {{content}}
+        </div>
     </div>
-</div>
+</article>
 {{/page}}
 
 {{!-- Post List - 5 latest articles --}}
@@ -60,5 +62,4 @@
         {{> "sidebar"}}
     </div>
 </div>
-
 {{/is}}
