@@ -18,6 +18,7 @@
 
 {{#page}}
 <h1 class="post-title text-4xl md:text-44 mb-5 text-title text-center mx-auto max-w-3xl">{{title}}</h1>
+{{/page}}
 
 
 {{!-- Post Grid - 4 latest articles --}}
@@ -32,6 +33,7 @@
     </div>
 </div>
 
+{{#page}}
 {{!-- Switch to the 'post' context to grab editable content --}}
 <div class="post-body-wrap relative lg:flex mx-auto max-w-3xl">
     <div class="post-body min-w-0 js-post-content{{#match @custom.post_font "=" "font-serif"}} font-serif{{else}} font-sans{{/match}}{{#match @custom.post_font_size "=" "20px"}} text-xl{{else}} text-lg{{/match}}">
