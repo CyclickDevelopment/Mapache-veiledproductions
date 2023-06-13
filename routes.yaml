@@ -3,11 +3,19 @@ routes:
     data: page.veiled-productions
     template: homepage 
 
+  /oxfordshire-wedding-video/:
+    controller: channel
+    template: county
+    filter: tag:oxfordshire-wedding-video
+    data: page.oxfordshire
+
 collections:
   /blog/:
     permalink: /{slug}/
     template: index
+    #filter: tag:-oxfordshire-wedding-video
     data: page.blog
+
 
 taxonomies:
   tag: /tag/{slug}/
