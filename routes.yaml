@@ -13,7 +13,6 @@ collections:
   /blog/:
     permalink: /{slug}/
     template: index
-    #filter: tag:-oxfordshire-wedding-video
     data: page.blog
 
 
